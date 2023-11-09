@@ -4,13 +4,11 @@ import cv2 as cv
 haar_cascade = cv.CascadeClassifier('haar_face.xml')
 
 people = ['Jack Black', 'Johnny Depp', 'Keanu Reeves']
-# features = np.load('features.npy', allow_pickle=True)
-# labels = np.load('labels.npy')
 
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img = cv.imread(r'C:\Users\costco\Documents\codigo c\opencv presentacion\Caras\Johnny Depp\1.jpg')
+img = cv.imread(r'C:\Users\costco\Documents\codigo c\opencv presentacion\prueba\50.jpg')
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Person', gray)

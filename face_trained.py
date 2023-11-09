@@ -5,7 +5,7 @@ import cv2 as cv
 import numpy as np
 
 people = ['Jack Black', 'Johnny Depp', 'Keanu Reeves']
-DIR = r'C:\Users\costco\Documents\codigo c\opencv presentacion\Caras'
+DIR = r'C:\Users\costco\Documents\codigo c\opencv presentacion\Caras\train'
 
 haar_cascade = cv.CascadeClassifier('haar_face.xml')
 
