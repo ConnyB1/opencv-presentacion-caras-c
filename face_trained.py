@@ -32,7 +32,7 @@ def create_train():
                 labels.append(label)
 
 create_train()
-print('Training done ---------------')
+print('Entrenamiento terminado ---------------')
 
 features = np.array(features, dtype='object')
 labels = np.array(labels)
