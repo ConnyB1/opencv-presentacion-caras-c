@@ -1,5 +1,3 @@
-#pylint:disable=no-member
-
 import os
 import cv2 as cv
 import numpy as np
@@ -41,7 +39,6 @@ labels = np.array(labels)
 
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 
-# Train the Recognizer on the features list and the labels list
 face_recognizer.train(features,labels)
 
 face_recognizer.save('face_trained.yml')

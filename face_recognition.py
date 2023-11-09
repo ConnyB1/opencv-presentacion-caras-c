@@ -8,7 +8,7 @@ people = ['Jack Black', 'Johnny Depp', 'Keanu Reeves']
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img = cv.imread(r'C:\Users\costco\Documents\codigo c\opencv presentacion\Caras\val\Keanu Reeves\1.jpg')
+img = cv.imread(r'C:\Users\costco\Documents\codigo c\opencv presentacion\Caras\val\Jack Black\2.jpg')
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Person', gray)
